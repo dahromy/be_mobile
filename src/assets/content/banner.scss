@@ -1,0 +1,138 @@
+
+.mobile_container-acceuil {
+  @apply container heigth_screen m-auto flex;
+}
+
+.mobile_column {
+  @apply flex justify-between;
+}
+
+.big_title {
+  @apply flex flex-col justify-center;
+
+  max-width: $max-title;
+  h1 {
+    @apply text-primary;
+  }
+
+  h3 {
+    @apply leading-10 flex items-center;
+    font-size: $size-s_title;
+    max-width: $max-s_title;
+    height: 110px;
+  }
+}
+
+.play-store {
+  @apply flex items-center;
+  height: $heigth-store;
+
+  a:last-child {
+    margin-left: 20px;
+  }
+}
+
+.picture-wrap{
+  @apply relative;
+}
+
+.images-acceuil {
+  @apply flex items-center rounded-full overflow-hidden absolute left-0 top-20;
+  height: 781px;
+  width: 781px;
+}
+
+.mobile_container-balance {
+  height: 696px;
+  @apply container heigth_screen;
+  margin: auto;
+}
+
+.images-phones {
+  width: 50%;
+
+  .phone-visa{
+    @apply flex justify-center rounded-full overflow-hidden;
+    background: theme('colors.light');
+    transform: translateX(-188px);
+
+    img {
+      position: relative;
+      right: 50px;
+    }
+  }
+
+  .VIsa-img{
+    position: relative;
+    transform: translate(70px,-330px);
+    height: 253px;
+  }
+
+}
+
+
+/******** build_mobile**********/
+
+.build_mobile {
+  @apply flex flex-col justify-center w-2/4;
+
+  h4:nth-child(1) {
+    @apply font-bold;
+    font-size: 28px;
+  }
+
+  button {
+    @apply mt-3 w-2/5;
+  }
+}
+
+/*************** Save money *********/
+
+.mobile_container-money {
+
+  background: theme('colors.primary');
+
+  .mobile_column {
+    @apply flex-col  container justify-center m-auto ;
+    .mobile_titles-save {
+      @apply m-auto;
+      color: theme('colors.light');
+
+      h2 {
+        @apply font-thin m-auto items-center flex;
+
+        font-size: 38px;
+        max-width: 861px;
+        height: 250px;
+      }
+    }
+
+    .spend_money {
+      @apply flex;
+      height: 200px;
+
+      .request {
+        @apply flex flex-col items-center m-auto;
+        max-width: 270px;
+        color: theme('colors.light');
+
+
+        h6 {
+          @apply font-bold;
+        }
+
+      }
+    }
+
+    .button_get{
+      @apply h-32 flex justify-center items-center;
+
+      button{
+        @apply w-1/5 rounded-full font-bold;
+
+        height: 50px;
+        background: theme('colors.light');
+      }
+    }
+  }
+}

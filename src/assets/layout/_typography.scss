@@ -1,0 +1,151 @@
+@layer utilities {
+  h1,
+  .h1 {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 36px;
+    letter-spacing: -0.359822px;
+
+    @screen lg {
+      font-size: 40px;
+      line-height: 57px;
+      letter-spacing: -1.4px;
+    }
+    @screen xl {
+      font-size: 70px;
+      line-height: 77px;
+      letter-spacing: -1.4px;
+    }
+  }
+  h2,
+  .h2 {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 28px;
+    @screen xl {
+      font-size: 50px;
+      line-height: 58px;
+      letter-spacing: -1px;
+    }
+  }
+  h3,
+  .h3 {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 34px;
+    @screen lg {
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: -0.96px;
+    }
+    @screen xl {
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.96px;
+    }
+  }
+  h4,
+  .h4 {
+    font-family: "Gilroy";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    @screen lg {
+      font-size: 30px;
+      line-height: 38px;
+      letter-spacing: -0.76px;
+    }
+    @screen xl {
+      font-size: 38px;
+      line-height: 48px;
+      letter-spacing: -0.76px;
+    }
+  }
+  h5,
+  .h5 {
+    font-family: "Gilroy";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    @screen xl {
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.52px;
+    }
+  }
+  h6,
+  .h6 {
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 37px;
+    letter-spacing: -0.4px;
+    @screen xl {
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: -0.44px;
+    }
+  }
+  h7,
+  .h7 {
+    font-family: "Gilroy";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  p,
+  .body {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    @screen xl {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.36px;
+    }
+  }
+
+  body {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: theme("colors.secondary");
+    @screen xl {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .title-1 {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 20px;
+    line-height: 37px;
+    @screen lg {
+      /* 24px/37px bold */
+      font-size: 24px;
+      letter-spacing: -0.48px;
+    }
+  }
+  .title-2 {
+    /* 24px/37px bold */
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    @screen lg {
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: -0.56px;
+    }
+  }
+}
+
+
+body{
+  overflow-x: hidden;
+}

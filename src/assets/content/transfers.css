@@ -1,0 +1,32 @@
+/*************  mobile_contenaire-transfers *******/
+.mobile_contenaire-transfers {
+  @apply container  m-auto heigth_screen flex justify-center items-center;
+}
+.mobile_contenaire-transfers .mobile_content-busness {
+  @apply flex justify-center items-center;
+}
+.mobile_contenaire-transfers .mobile_content-busness .mobile_items-computer {
+  @apply relative;
+  width: 1037.45px;
+  height: 638px;
+  left: -255px;
+}
+.mobile_contenaire-transfers .mobile_content-busness .mobile_items-computer img:first-child {
+  width: 1037.45px;
+  height: 638px;
+}
+.mobile_contenaire-transfers .mobile_content-busness .mobile_items-computer img:last-child {
+  @apply rounded-full absolute;
+  width: 388px;
+  height: 388px;
+  transform: translate(338px, -285px);
+}
+.mobile_contenaire-transfers .mobile_content-busness .mobile_items-transfert h4 {
+  @apply text-primary font-bold;
+}
+.mobile_contenaire-transfers .mobile_content-busness .mobile_items-transfert p {
+  height: 100px;
+  @apply flex items-center;
+}
+
+/*# sourceMappingURL=transfers.css.map */

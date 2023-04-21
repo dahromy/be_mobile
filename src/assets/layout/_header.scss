@@ -1,0 +1,12 @@
+$logoheigth:62px;
+$width:40%;
+$heigth-defaut:75px;
+
+.mobile-header{
+  @apply  flex justify-between container;
+
+  height: $heigth-defaut;
+  margin: auto;
+}
+
+

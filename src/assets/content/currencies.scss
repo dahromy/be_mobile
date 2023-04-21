@@ -1,0 +1,31 @@
+.mobile_container-currencies {
+  @apply container m-auto flex flex-col justify-center;
+  height: 70vh;
+  .title-currencies {
+    @apply flex justify-center items-center  ;
+    height: 180px;
+
+    h2 {
+      @apply  font-extralight;
+      font-size: 35px;
+    }
+  }
+
+
+  .drapeau_currencies{
+    @apply grid grid-cols-7 gap-7;
+
+    .currencies{
+      @apply flex flex-col justify-center items-center;
+
+      img{
+        width: 60px;
+        height: 60px;
+      }
+
+      span:last-child{
+        @apply  font-bold;
+      }
+    }
+  }
+}

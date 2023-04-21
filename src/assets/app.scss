@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #e02b59;
+  --color-dark: #3c3c3c;
+  --color-secondary: #574949;
+  --color-neutral: #767676;
+  --color-light: #efefef;
+  --border-color: #979797;
+}
+
+$heigth-acceuil:100vh;
+$max-title : 690px;
+$max-s_title : 485px;
+$size-s_title : 31px;
+$heigth-store : 80px;
+
+@import "./layout/fonts";
+@import "./layout/typography";
+@import "./layout/button";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/footer";
+@import "content/banner";
+@import "layout/variable";
+@import "content/countrie";
+@import "content/currencies";
+@import "content/etape_account";
+@import "content/colaboration";
+@import "content/transfers";
+

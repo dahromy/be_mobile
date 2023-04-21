@@ -1,0 +1,319 @@
+
+.mobile_container-etape {
+  @apply flex container m-auto relative  items-center;
+  height: 89vh;
+  .mobile_open-account {
+    width: 600px;
+  }
+
+  .mobile_picture-etapes {
+
+    @apply absolute rounded-full overflow-hidden;
+    height: 800px;
+    width: 800px;
+    right: -300px;
+  }
+
+  .title_etapes {
+    max-width: 621px;
+
+    h4 {
+      @apply text-primary font-bold;
+    }
+
+    p {
+      @apply flex items-center;
+      height: 100px;
+      max-width: 469px;
+    }
+  }
+
+  .icons_etapes {
+    @apply flex justify-between items-center h-36;
+
+    .point {
+      @apply bg-neutral m-1 rounded-full;
+      width: 10px;
+      height: 10px;
+      position: relative;
+      transform: translateY(-20px);
+    }
+
+    .icons_account {
+      width: 101px;
+      @apply flex flex-col items-center text-center;
+
+      img:nth-child(1) {
+        height: 56px;
+      }
+    }
+
+    .iDCard {
+      width: 200px;
+    }
+
+    .upload {
+      width: 130px;
+    }
+
+    .done {
+      position: relative;
+      transform: translate(15px, -15px);
+    }
+
+  }
+
+}
+
+
+
+/***************** PAYEMENT ***************/
+
+.mobile_contenaire-payement {
+  @apply bg-light  ;
+
+  .mobile_content-payement {
+    @apply container flex m-auto justify-between items-center ;
+
+    .mobile_items-payement {
+      @apply m-auto;
+      max-width: 620px;
+
+      h4 {
+        @apply text-primary font-bold;
+      }
+
+      p {
+        @apply h-32 flex items-center;
+        max-width: 469px;
+      }
+    }
+
+    .mobil_items-contactless {
+      @apply relative flex flex-col justify-center items-center ;
+      right: -100px;
+      bottom: -100px;
+
+
+      .Mbobile {
+        @apply mb-14;
+        width: 1050px;
+        height: 900px;
+      }
+
+      .buy-payement {
+        @apply absolute grid grid-cols-1 gap-4;
+        top: 150px;
+        left: 100px;
+
+        .payement {
+          @apply rounded-xl;
+          width: 375px;
+          height: 124px;
+        }
+      }
+
+      .Vise-pisture {
+        @apply absolute;
+        right: 425px;
+        bottom: 142px;
+        width: 412px;
+        height: 253px;
+      }
+
+    }
+  }
+}
+
+
+/**************SAVINGS *************/
+
+.mobile_container-saving {
+  @apply flex container m-auto justify-between items-center relative;
+
+  .drapeau-float {
+    @apply top-20  absolute;
+    left: 330px;
+    width: 54px;
+    height: 54px;
+
+  }
+
+  .drapeau-float1 {
+    @apply absolute  top-20 right-40;
+    width: 47px;
+    height: 47px;
+  }
+
+  .drapeau-float2 {
+    @apply size_drapeau bottom-64  ;
+    left: 10px;
+
+  }
+
+  .drapeau-float3 {
+    @apply absolute bottom-20 right-40;
+    width: 58px;
+    height: 58px;
+
+  }
+
+  .mobil_items-saving {
+    @apply relative flex flex-col justify-center items-center ;
+
+
+    .Mbobile {
+      width: 483.09px;
+      height: 800px;
+      margin-top: 50px;
+    }
+
+    .be-saving {
+      @apply absolute grid grid-cols-1 gap-4;
+      top: 195px;
+      left: 110px;
+
+      .saving {
+        @apply rounded-xl;
+        width: 335px;
+        height: 104px;
+      }
+    }
+  }
+
+  .mobile_items-rewarded {
+    @apply m-auto;
+    max-width: 481px;
+
+    h4 {
+      @apply text-primary font-bold;
+    }
+
+    p {
+      @apply h-44 flex items-center;
+    }
+  }
+}
+
+
+/*************** LENDING ***************/
+
+.mobile_contenaire-lending {
+  @apply bg-light;
+
+  .mobile_content-lending {
+    @apply flex container m-auto items-center relative;
+
+    .mobile_items-lending {
+      max-width: 550px;
+
+      h4 {
+        @apply text-primary font-bold;
+      }
+
+      p {
+        @apply flex items-center;
+        height: 120px;
+      }
+    }
+
+    .mobile_items-scoring {
+      @apply relative flex flex-col justify-center items-center ;
+
+
+      .Mbobile {
+        @apply relative;
+        width: 483.09px;
+        height: 800px;
+        right: -150px;
+      }
+
+      .be-lending {
+        @apply absolute grid grid-cols-1 gap-4;
+        top: 160px;
+        left: 80px;
+
+        .lending {
+          @apply rounded-xl;
+
+          width: 335px;
+          height: 104px;
+        }
+      }
+    }
+  }
+}
+
+/**********Secure and affordable financial***************/
+
+
+.mobile_container-secure {
+  @apply flex flex-col justify-center;
+  color: theme('colors.light');
+  background: theme('colors.primary');
+
+  .mobile_content-secure {
+    @apply flex flex-col container m-auto items-center justify-center;
+
+    button{
+      @apply m-14;
+      border-radius: 38px;
+      width: 275px;
+      height: 76px;
+    }
+
+    .mobile_titles-secure {
+
+      h2 {
+        @apply flex items-center m-auto font-extralight ;
+        max-width: 958px;
+        height: 380px;
+      }
+
+    }
+
+    .mobile_financial{
+      @apply flex justify-between grid grid-cols-4 gap-7;
+
+      .servives{
+        @apply text-center;
+        width: 260px;
+
+        img{
+          @apply m-auto;
+          width: 105px;
+          height: 100px;
+        }
+
+        h6{
+          @apply flex items-center  justify-center ;
+          height: 55px;
+        }
+
+        p{
+          @apply font-extralight;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

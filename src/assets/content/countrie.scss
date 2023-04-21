@@ -1,0 +1,41 @@
+.mobile_container-countrie{
+  @apply container m-auto;
+
+  .mobile_column{
+    @apply flex-col;
+
+    .title_countrie{
+
+      h2{
+        height: 220px;
+        max-width: 720px;
+        @apply flex items-center m-auto font-extralight;
+      }
+    }
+
+    .carte_countrie{
+      height: 670px;
+    }
+
+    .compte_countrie{
+      @apply grid grid-cols-4 gap-4;
+
+      .countrie{
+        @apply flex flex-col justify-center bg-light items-center rounded-2xl ;
+        height: 173px;
+        width: 250px;
+
+        h2{
+          @apply text-primary font-light;
+          font-size: 90px;
+        }
+
+        span{
+          @apply mt-3;
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+}

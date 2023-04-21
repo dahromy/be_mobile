@@ -1,0 +1,59 @@
+
+
+@layer components {
+  .container {
+    @screen md {
+      @apply max-w-3.7xl;
+    }
+    @screen lg {
+      @apply max-w-3.5xl;
+    }
+    @screen xl {
+      @apply max-w-6.2xl;
+    }
+    @screen 2xl {
+      @apply max-w-8xl;
+    }
+  }
+
+  /********* texte color ***********/
+
+  .text-primary {
+    color: theme('colors.primary');
+  }
+
+  /********* Backround color ligth *************/
+
+  .bg-light{
+    background: theme('colors.light');
+  }
+
+  .bg-primary{
+    background: theme('colors.primary');
+  }
+
+  /********* Backround color neutral *************/
+
+  .bg-neutral{
+    background: theme('colors.neutral');
+  }
+
+  /***********heigth ecran ********/
+
+  .heigth_screen{
+    height: 100vh;
+  }
+
+  /********* color drapeau *************/
+
+  .color-drapeau{
+    color: theme('colors.secondary');
+  }
+
+  /************taille de drapeau ******/
+
+  .size_drapeau{
+    @apply absolute  h-20 w-20;
+  }
+
+}

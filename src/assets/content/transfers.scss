@@ -1,0 +1,48 @@
+/*************  mobile_contenaire-transfers *******/
+
+.mobile_contenaire-transfers {
+  @apply  flex justify-center items-center;
+
+  .mobile_content-busness {
+    @apply flex justify-center items-center;
+
+    .mobile_items-computer {
+
+      @apply relative;
+      width: 870.45px;
+      height: 638px;
+      left: -130px;
+
+
+      img:first-child {
+        width: 1037.45px;
+        height: 638px;
+      }
+
+      img:last-child {
+        @apply rounded-full absolute;
+
+        width: 388px;
+        height: 388px;
+        transform: translate(390px, -295px);
+      }
+
+    }
+
+    .mobile_items-transfert {
+      @apply mr-40;
+
+      max-width: 525px;
+      h4 {
+        @apply text-primary font-bold ;
+      }
+
+      p {
+        height: 100px;
+        @apply flex items-center;
+      }
+
+
+    }
+  }
+}

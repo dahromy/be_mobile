@@ -1,0 +1,54 @@
+@mixin fontface(
+  $name,
+  $path,
+  $weight: null,
+  $style: null,
+  $exts: eot woff2 woff ttf svg
+) {
+  $src: null;
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+
+// 'DM Sans'
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-Bold', 700, normal, ttf);
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-BoldItalic', 700, italic,ttf);
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-Medium', 600, normal, ttf);
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-MediumItalic', 600, italic, ttf);
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-Regular', 400, normal, ttf); 
+@include fontface('DM Sans', '/assets/fonts/DM_Sans/DMSans-Italic', 400, italic, ttf); 
+
+// 'Gilroy'
+@include fontface('Gilroy', '/assets/fonts/Gilroy/Gilroy-Heavy', 900, normal, ttf);
+@include fontface('Gilroy', '/assets/fonts/Gilroy/Gilroy-Bold', 700, normal, ttf);
+@include fontface('Gilroy', '/assets/fonts/Gilroy/Gilroy-Medium', 600, normal, ttf); 
+@include fontface('Gilroy', '/assets/fonts/Gilroy/Gilroy-Regular', 400, normal, ttf); 
+@include fontface('Gilroy', '/assets/fonts/Gilroy/Gilroy-Light', 300, normal, ttf); 

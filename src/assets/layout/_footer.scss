@@ -1,0 +1,88 @@
+
+
+.mobile_containere-help{
+
+  .mobile_content-help{
+    @apply grid grid-cols-2  gap-7 container m-auto;
+
+    .mobile_description-address{
+      @apply flex flex-col justify-center;
+      height: 600px;
+      max-width: 549px;
+
+      h4{
+        @apply font-bold  flex items-center;
+        height: 70px;
+      }
+
+      a{
+        @apply font-bold;
+      }
+
+      .liste-address{
+        @apply grid grid-cols-2 gap-7 items-center;
+        height: 200px;
+      }
+
+      .icons-social{
+        @apply text-primary font-light;
+
+        .icons_operateure{
+          @apply flex gap-5 items-center;
+
+          height: 70px;
+        }
+      }
+    }
+
+    .mobile_description-download{
+      @apply  flex flex-col justify-center;
+      height: 520px;
+      max-width: 549px;
+
+      h4{
+        @apply font-bold  flex items-center;
+        height: 70px;
+      }
+
+      .create-account-app{
+        @apply flex  items-center justify-between;
+        height: 162px;
+        width: 666px;
+
+        .play-store{
+          a{
+            width: 160px;
+            height: 51px;
+          }
+        }
+
+        h5{
+          @apply text-primary;
+        }
+
+        .create-compt{
+
+          .button-create{
+            @apply flex items-center;
+            height:75px ;
+            button{
+              @apply rounded-xl text-primary  font-bold;
+              width: 196px;
+              height: 51px;
+              border: 2px solid #e02b59;
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+
+.mobile_decription-footer{
+  @apply bg-primary flex justify-around p-6 text-sm;
+  color: theme('colors.light');
+}

@@ -1,0 +1,48 @@
+$logoWidth :155.86px;
+$logoheigth:62px;
+
+.mobile-logo{
+  @apply flex items-center;
+
+  width: 60%;
+}
+
+.images-logo{
+  width: $logoWidth;
+  height: $logoheigth;
+}
+
+.mobile-menu{
+  @apply flex relative;
+
+  width: $width;
+}
+
+.menu-acceuil{
+  @apply flex justify-between items-center;
+  width: 100%;
+}
+
+.mobile-menu .liste-acceuil{
+
+  @apply relative;
+
+  &:after {
+    content: "";
+    height: 4px;
+    left: 0;
+    top: 44px;
+    width: 0px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+  }
+
+  &:hover:after{
+    width: 100%;
+    background: #E02B59;
+  }
+
+  &:hover{
+    color: #E02B59;
+  }
+}

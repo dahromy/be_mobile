@@ -1,0 +1,52 @@
+
+.mobile_contenaire-unity {
+  height: 1200px;
+
+  .mobil_content-colaboration {
+    @apply flex  justify-between grid grid-cols-1 ;
+    height: 650px;
+
+    .mobile_description-colaboration:nth-child(2){
+      @apply flex-row-reverse flex ;
+
+      .mobile_items-lutte{
+        margin-left: 70px;
+      }
+      button{
+        @apply mt-9;
+      }
+    }
+    .mobile_description-colaboration {
+      @apply flex justify-end bg-light;
+
+
+
+      .mobile_items-lutte {
+        @apply flex flex-col items-start justify-center relative ml-0;
+        max-width: 500px;
+        margin-right: 107px;
+        height: 600px;
+
+        h2 {
+          @apply text-primary font-extralight;
+          height: 184px;
+        }
+
+        p:nth-child(3) {
+          @apply font-bold flex items-center ;
+          height: 70px;
+        }
+      }
+
+      .mobile_image-people{
+        @apply  overflow-hidden relative;
+        width: 720px;
+        img{
+          @apply absolute object-cover;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
